@@ -82,22 +82,40 @@ h2 {
     border: 2px solid var(--title-text);
 }
 
+.smaller-works:hover,
+.works-box:hover {
+    box-shadow: 3px 3px 4px seagreen;
+}
+
 .small-container {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     justify-content: space-around;
-    margin: 20px 50px 50px 250px; 
+
 }
 
 .smaller-works {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    height: 150px;
-    width: 290px;
     border: 2px solid var(--title-text);
     justify-content: space-around;
+    margin: 20px 30px 20px 250px; 
+    height: 250px;
+    
+}
+
+.card-header {
+    color: gold;
+    background-color: rgb(15, 15, 146);
+    border: 2px solid white;
+    position: relative;
+    margin: -25px auto; 
+    text-align: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-list {
@@ -136,4 +154,13 @@ footer {
     .container, 
     nav {
       flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    .smaller-works,
+    .works-box {
+        margin-left: 60px;
+        padding: 0;
+        justify-content: center;
     }
