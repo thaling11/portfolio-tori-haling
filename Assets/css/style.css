@@ -82,9 +82,23 @@ h2 {
     border: 2px solid var(--title-text);
 }
 
+.main-header {
+    background-color: var(--title-text);
+    color: silver;
+    position: relative; 
+    margin: 0 auto -250px;   
+    text-align: center;
+    /* margin-bottom: 0; */
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-around;
+    width: 50%; 
+    height: 20px;
+}
+
 .smaller-works:hover,
 .works-box:hover {
-    box-shadow: 3px 3px 4px seagreen;
+    box-shadow: 3px 3px 10px seagreen;
 }
 
 .small-container {
@@ -92,7 +106,7 @@ h2 {
     flex-wrap: wrap;
     position: relative;
     justify-content: space-around;
-
+    margin-left: 230px;
 }
 
 .smaller-works {
@@ -101,21 +115,20 @@ h2 {
     position: relative;
     border: 2px solid var(--title-text);
     justify-content: space-around;
-    margin: 20px 30px 20px 250px; 
+    margin-top: 20px;
     height: 250px;
-    
+    width: 300px;
 }
 
 .card-header {
-    color: gold;
-    background-color: rgb(15, 15, 146);
-    border: 2px solid white;
+    background-color: var(--title-text);
+    color: silver;
     position: relative;
-    margin: -25px auto; 
+    margin: -25px auto 0;   
     text-align: center;
-    width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 50%;
 }
 
 .contact-list {
@@ -146,7 +159,7 @@ footer {
     background-color: silver;
 }
 
-/* Media queries */
+/* Media query for tablet size */
 
 @media screen and (max-width: 768px) {
 
@@ -158,9 +171,60 @@ footer {
       text-align: center;
     }
 
+    .container,
+    .works-box {
+        margin: 0px;
+        padding: 0px;
+    
+    }
+
     .smaller-works,
     .works-box {
-        margin-left: 60px;
         padding: 0;
         justify-content: center;
+        width: 100%;
+    }
+
+    .small-container {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: space-around;
+        margin-left: auto;
+    }
+
+    .showcase {
+        margin-left: 80px;
+        margin-right: 80px;
+        width: auto;
+    }
+
+    .card-header {
+        position: relative;
+        margin: -25px auto 0 200px;  
+        text-align: center;
+        display: flex;
+        width: 50%;
+        justify-content: center;
+    }
+
+    h1 {
+        margin: 10px;
+    }
+
+    /* Media query for iPhone size */
+
+    @media  screen and (max-width: 400px) {
+        .smaller-works,
+        .works-box {
+            justify-content: center;
+            width: 100%;
+        }
+        .card-header {
+            position: relative;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+    
     }
