@@ -17,7 +17,7 @@
 * Responsive design layout for mobile devices, tablets and web browsers
 
 ## Mock Up
-![Screenshot-1](./assets/images/portfolio-screenshot.jpg)
+![Screenshot-1](./Assets/images/portfolio-screenshot.jpg)
 
 ## Application link
 
